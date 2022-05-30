@@ -17,7 +17,7 @@ docker build -f Dockerfile \
 docker push registry.digitalocean.com/django-k8s-registry/django-k8s-web --all-tags
 ```
 
-4. Update secrets
+4. Update secrets (if needed)
 ```
 kubectl delete secret django-k8s-web-prod-env
 kubectl create secret generic django-k8s-web-prod-env --from-env-file=web/.env.prod
