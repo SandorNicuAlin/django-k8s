@@ -1,5 +1,7 @@
 web/.env
+web/.env.prod
 .DS_STORE
+.kube/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
